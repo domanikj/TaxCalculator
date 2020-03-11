@@ -13,3 +13,7 @@ text-align: center;
 hr{
     border-bottom: solid black;;
 }
+ .btn{
+    text-align: center;
+    width: 360px;
+}
