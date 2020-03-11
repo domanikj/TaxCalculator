@@ -1,0 +1,15 @@
+body{
+    background-color: #CD5C5C;
+}
+
+.card{
+    margin-top: 300px;
+}
+
+.card-title {
+text-align: center;
+
+}
+hr{
+    border-bottom: solid black;;
+}
