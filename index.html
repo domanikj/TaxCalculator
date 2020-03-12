@@ -25,29 +25,31 @@
               <div class="form-group">
                 <label for="tip-percentage">Select Tip Percentage</label>
                 <select class="form-control" id="tip-percentage">
-                  <option>15%</option>
-                  <option>16%</option>
-                  <option>17%</option>
-                  <option>18%</option>
-                  <option>19%</option>
-                  <option>20%</option>
+                  <option value=".15">15%</option>
+                  <option value=".16">16%</option>
+                  <option value=".17">17%</option>
+                  <option value=".18">18%</option>
+                  <option value=".19">19%</option>
+                  <option value=".20">20%</option>
                 </select>
               </div>  
               <label for="num-people"># of Customers</label>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <button class="input-group-text">+</button>
-                  <button class="input-group-text">-</button>
-                </div>
-                <input type="text" id="num-people" class="form-control"  placeholder="0">
-              </div>
-              <button type="button" class="btn btn-warning ">Calculate</button>
+             
+              <button id="mybtn" type="button" class="btn btn-warning ">Calculate</button>
             </form>
           </div>
         </div>
        </div>
       </div>
      </div>
+
+     <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <button id="plus"  class="input-group-text">+</button>
+        <button id="minus" class="input-group-text">-</button>
+      </div>
+      <input type="text" id="num-people" class="form-control">
+    </div>
     <script src="dist/Index.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -55,3 +57,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+
