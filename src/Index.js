@@ -1,13 +1,13 @@
 //let a = document.getElementById('num-people');
+let numbCust = 1
 
+// Events
 document.getElementById('plus').addEventListener('click', addOne, true);
-let iGetal = 0
 
 function addOne() {
-   
-  iGetal =  iGetal + 1;
+  numbCust = numbCust + 1;
 
-document.getElementById('num-people').value = iGetal;
+document.getElementById('num-people').value = numbCust;
 
 }
 
