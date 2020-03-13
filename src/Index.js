@@ -2,12 +2,22 @@
 let numbCust = 1
 
 // Events
-document.getElementById('plus').addEventListener('click', addOne, true);
+document.getElementById('plus').addEventListener('click', addOne);
+document.getElementById('minus').addEventListener('click', minusOne);
 
 function addOne() {
   numbCust = numbCust + 1;
 
-document.getElementById('num-people').value = numbCust;
-
+  document.getElementById('num-people').value = numbCust;
 }
 
+function minusOne() {
+
+  if(numbCust > 0){
+    numbCust = numbCust - 1;
+    
+    document.getElementById('num-people').value = numbCust;
+  }else{
+    document.getElementById('num-people').value = numbCust;
+  }
+}
