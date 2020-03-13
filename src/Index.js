@@ -4,11 +4,14 @@ let numbCust = 1
 // Events
 document.getElementById('plus').addEventListener('click', addOne);
 document.getElementById('minus').addEventListener('click', minusOne);
+document.getElementById('mybtn').addEventListener('click', calculateTax);
 
 
 
-// Functions
 
+function calculateTax() {
+
+}
 
 /*
 * Function to add one to customer count
