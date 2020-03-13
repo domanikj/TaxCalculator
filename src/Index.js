@@ -5,14 +5,26 @@ let numbCust = 1
 document.getElementById('plus').addEventListener('click', addOne);
 document.getElementById('minus').addEventListener('click', minusOne);
 
+
+
+// Functions
+
+
+/*
+* Function to add one to customer count
+* @return None
+*/
 function addOne() {
   numbCust = numbCust + 1;
 
   document.getElementById('num-people').value = numbCust;
 }
 
+/*
+* Function to subtract one from customer count
+* @return None
+*/
 function minusOne() {
-
   if(numbCust > 0){
     numbCust = numbCust - 1;
     
