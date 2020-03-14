@@ -24,7 +24,7 @@ if(testCss.classList.contains('hide-card')) {
   testCss.classList.remove('hide-card')
   showTotal.textContent = total
 }else{
-  showTotal.textContent = total
+  showTotal.textContent = total.toFixed(2)
 }
 }
 
