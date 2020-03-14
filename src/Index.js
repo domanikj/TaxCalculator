@@ -13,13 +13,17 @@ document.getElementById('x').addEventListener('click', close);
 * @return None
 */
 function calculateTax() {
+
+// Initialized var
 let showTotal  = document.getElementById('show-total')
 let totalCost  = parseFloat(document.getElementById('total-cost').value);
 let percentage = parseFloat(document.getElementById('tip-percentage').value);
 let testCss    = document.getElementsByClassName('card')[1]
 
+// Calculates the total 
 let total = ((totalCost * percentage) + totalCost).toFixed(2) / numbCust;
 
+// If statement to check if element has class
 if(testCss.classList.contains('hide-card')) {
   testCss.classList.remove('hide-card')
   showTotal.textContent = total
@@ -37,6 +41,8 @@ function close() {
 */
 function addOne() {
   numbCust = numbCust + 1;
+
+  // adds 1 to count
   document.getElementById('num-people').value = numbCust;
 }
 
@@ -45,10 +51,14 @@ function addOne() {
 * @return None
 */
 function minusOne() {
+  // Sets so it will always be greater than 0
   if(numbCust > 0){
+    // Subtracts by one when greater than 0
     numbCust = numbCust - 1;
+    // Sets to value
     document.getElementById('num-people').value = numbCust;
   }else{
+    // Keeps it at zero
     document.getElementById('num-people').value = numbCust;
   }
 }
