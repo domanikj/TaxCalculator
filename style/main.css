@@ -3,7 +3,9 @@ body{
 }
 
 .card{
+    border: none;
     margin-top: 300px;
+    box-shadow: black;
 }
 
 .card-title {
@@ -16,4 +18,11 @@ hr{
  .btn {
     text-align: center;
     width: 360px;
+}
+
+.hide-card{
+      border: none;
+      visibility: hidden;
+      display: none;
+  
 }

@@ -1,4 +1,3 @@
-//let a = document.getElementById('num-people');
 let numbCust = 1
 
 // Events
@@ -6,12 +5,20 @@ document.getElementById('plus').addEventListener('click', addOne);
 document.getElementById('minus').addEventListener('click', minusOne);
 document.getElementById('mybtn').addEventListener('click', calculateTax);
 
-
-
-
 function calculateTax() {
 
+let totalCost = parseFloat(document.getElementById('total-cost').value);
+let percentage = parseFloat(document.getElementById('tip-percentage').value);
+
+let total = ((totalCost * percentage) + totalCost).toFixed(2) / numbCust;
+
+console.log(total)
+console.log(totalCost)
+console.log(percentage)
+//let calculated = totalCost.textContent
+
 }
+
 
 /*
 * Function to add one to customer count
